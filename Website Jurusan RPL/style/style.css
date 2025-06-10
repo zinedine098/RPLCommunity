@@ -167,8 +167,8 @@
         }
         
         .hero-btns .btn {
-            background-color: white;
-            color: var(--primary);
+            background-color: #e72e2e;
+            color: #f9fafb;
         }
         
         .hero-btns .btn-outline {
@@ -177,7 +177,7 @@
         }
         
         .hero-btns .btn:hover {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #e69c14;
         }
         
         .hero-btns .btn-outline:hover {
