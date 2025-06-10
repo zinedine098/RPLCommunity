@@ -13,24 +13,23 @@
 
 <body>
     <!-- Header/Navbar -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">RPL<span>Community</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                    <li><a href="#services">Layanan/fasilitas</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Tim</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
-    </header>
+  <nav class="navbar">
+    <a href="#" class="logo">RPL<span>Community</span></a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="beranda.html"><i class="fas fa-home"></i> Beranda</a>
+      <a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a>
+      <a href="keahlian.html"><i class="fas fa-tools"></i> Keahlian</a>
+      <a href="#alumni"><i class="fas fa-briefcase"></i> Portofolio</a>
+      <a href="#alumni"><i class="fas fa-users"></i> Tim</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+    </div>
+  </nav>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -39,7 +38,6 @@
             <p>Kami akan membimbing anda untuk menjadi programmer yang handal dan Profesional</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn">Hubungi Kami</a>
-                <a href="#services" class="btn btn-outline">Pelajari Lebih Lanjut</a>
             </div>
         </div>
     </section>
@@ -99,358 +97,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Keahlian Kami</h2>
-            <p class="section-subtitle">Kami menawarkan berbagai Keahlian coding untuk membimbing Anda yang ingin tumbuh
-                dan berkembang.</p>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Pengembangan Web</h3>
-                    <p>Website profesional dengan desain responsif dan performa optimal.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Aplikasi Mobile</h3>
-                    <p>Bangun aplikasi mobile berkualitas tinggi untuk iOS dan Android.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3>Digital Marketing</h3>
-                    <p>Tingkatkan visibilitas online bisnis Anda dengan strategi pemasaran digital terbaik.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>E-Commerce</h3>
-                    <p>toko online lengkap untuk memulai karir dan mengembangkan bisnis e-commerce.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>SEO</h3>
-                    <p>Optimasi mesin pencari untuk meningkatkan peringkat dan traffic organik website Anda.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
-                <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Computing</h3>
-                    <p>Solusi penyimpanan dan komputasi awan yang aman dan terukur untuk bisnis Anda.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Lab Computer</h3>
-                    <p>Solusi untuk pembelajaran dan praktek yang di bimbing langsung oleh Kepala jurusan.</p>
-                    <!-- <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="section-title">Portfolio Kami</h2>
-            <p class="section-subtitle">Beberapa proyek terbaik yang telah kami selesaikan oleh siswa-siswa kami.</p>
-
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="web">Website</button>
-                <button class="filter-btn" data-filter="app">Aplikasi</button>
-                <button class="filter-btn" data-filter="design">desain web</button>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web">
-                    <img src="img/coding.avif" alt="Proyek Website 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Website Universitas UNUJA</h3>
-                        <p>Website Perguruan tinggi dengan desain modern dan responsif.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="app">
-                    <img src="img/mobile.avif" alt="Proyek Aplikasi 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Aplikasi Mobile Melle-e</h3>
-                        <p>Aplikasi mobile untuk e-commerce bisnis dengan fitur lengkap.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="design">
-                    <img src="img/setup pc.avif" alt="Proyek Desain 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Desain website</h3>
-                        <p>Desain website lengkap untuk perusahaan startup.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="web">
-                    <img src="img/handphone.avif" alt="Proyek Website 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Toko Online MELLE-E</h3>
-                        <p>Platform e-commerce dengan sistem pembayaran terintegrasi.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <!-- <div class="portfolio-item" data-category="app">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyek Aplikasi 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Aplikasi Kesehatan JKL</h3>
-                        <p>Aplikasi untuk konsultasi kesehatan online dengan dokter.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div> -->
-
-                <div class="portfolio-item" data-category="design">
-                    <img src="img/komunikasi siswa.avif" alt="Proyek Desain 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Redesign Website Perusahaan</h3>
-                        <p>Redesign website perusahaan dengan UX/UI yang lebih baik.</p>
-                        <a href="udgzidan-rizki.netlify.app" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Apa Kata Guru Kami</h2>
-            <p class="section-subtitle">Kritik dan Saran dari guru guru SMK Nurul Jadid.</p>
-
-            <div class="testimonial-slider">
-                <div class="testimonial-slide active">
-                    <img src="img/rahmat hidayatullah.jpeg" alt="Client 1" class="testimonial-avatar">
-                    <p class="testimonial-quote">"Saya sangat menghargai adanya RPLCommunity dan saya harap komunitas
-                        ini bisa tetap berjalan dan mencetak generasi emas selanjutnya"</p>
-                    <h4 class="testimonial-author">Rahmat hidayatullah</h4>
-                    <p class="testimonial-role">Guru aktif SMK Nurul Jadid</p>
-                </div>
-
-                <div class="testimonial-slide">
-                    <img src="img/master ai.jpg" alt="Client 2" class="testimonial-avatar">
-                    <p class="testimonial-quote">"komunitas yang sangat bagus, saran saya bagi anda yang ingin meraih
-                        kesuksesan di bidang pemroggraman adalah jangan pernah pantang menyerah dan patah semangat."</p>
-                    <h4 class="testimonial-author">Muhammad ainol yaqin</h4>
-                    <p class="testimonial-role">Dosen aktif UNUJA</p>
-                </div>
-
-                <div class="testimonial-slide">
-                    <img src="img/sandhika galih.jpeg" alt="Client 3" class="testimonial-avatar">
-                    <p class="testimonial-quote">"ini adalah awal yang baik untuk meningkatkan kualitas kompetensi siswa
-                        dan semoga komunitas ini tetap berjalan lancar dan sukses selalu"</p>
-                    <h4 class="testimonial-author">Muhammad Sandhika galih</h4>
-                    <p class="testimonial-role">Bapak programmer Indonesia</p>
-                </div>
-
-                <div class="testimonial-slide">
-                    <img src="img/faqihza mukhlis.jpeg" alt="Client 3" class="testimonial-avatar">
-                    <p class="testimonial-quote">"saya dukung selalu untuk siswa siswa smknj semoga sukses selalu"</p>
-                    <h4 class="testimonial-author">Faqihza mukhlis</h4>
-                    <p class="testimonial-role">kelas terbuka</p>
-                </div>
-
-                <div class="testimonial-slide">
-                    <img src="img/muhammad fadil hasan.jpeg" alt="Client 3" class="testimonial-avatar">
-                    <p class="testimonial-quote">"ini adalah awal yang baik untuk meningkatkan kualitas kompetensi siswa
-                        dan semoga komunitas ini tetap berjalan lancar dan sukses selalu"</p>
-                    <h4 class="testimonial-author">Muhammad fadil hasan</h4>
-                    <p class="testimonial-role">Alumni SMKNJ</p>
-                </div>
-            </div>
-
-
-
-            <div class="slider-controls">
-                <div class="slider-dot active" data-slide="0"></div>
-                <div class="slider-dot" data-slide="1"></div>
-                <div class="slider-dot" data-slide="2"></div>
-                <div class="slider-dot" data-slide="3"></div>
-                <div class="slider-dot" data-slide="4"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="container">
-            <h2 class="section-title">tim kami</h2>
-            <p class="section-subtitle">Kenali tim profesional di balik kesuksesan RPLCommunity.</p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="img/tim1.jpeg" alt="John Doe" class="team-avatar">
-                    <h3>Muhammad Nauval</h3>
-                    <p>Backend Developer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="img/tim2.jpeg" alt="Jane Smith" class="team-avatar">
-                    <h3>Bintang Satria Dirgantara</h3>
-                    <p>Web designer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="img/FALAH NIH BOSS_photo.jpg" alt="Robert Johnson" class="team-avatar">
-                    <h3>Muhammad Iqbal nur falah</h3>
-                    <p>FullStack Developer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="img/zidan.jpg" alt="Emily Davis" class="team-avatar">
-                    <h3>Zinedine Zidanir Rizki</h3>
-                    <p>Front-end Developer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Hubungi Kami</h2>
-            <p class="section-subtitle">Kami siap membantu Anda. Silakan hubungi kami untuk pertanyaan atau informasi
-                lebih lanjut.</p>
-
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Informasi Kontak</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Alamat</h4>
-                                <p>Jl. KH. Zaini Mun'im No. 123, karanganyar, Paiton, Probolinggo, Indonesia</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Telepon</h4>
-                                <p><a href="tel:+622112345678">0821-4146-6232</a></p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@digitalsolutions.id">wawanzidanrizki@gmail.com</a></p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Jam Operasional</h4>
-                                <p>Ahad - Kamis: 08:00 - 14:00 WIB</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nama Lengkap</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Nomor Telepon</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subjek</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn">Kirim Pesan</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -467,17 +113,6 @@
                 </div>
 
                 <div class="footer-col">
-                    <h3>Layanan</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Pengembangan Web</a></li>
-                        <li><a href="#">Aplikasi Mobile</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-col">
                     <h3>Jurusan IT</h3>
                     <ul class="footer-links">
                         <li><a href="#">Tentang Kami</a></li>
@@ -487,15 +122,6 @@
                         <li><a href="#">Karir</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru dari komunitas ini.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Alamat Email Anda" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
             </div>
 
             <div class="footer-bottom">
@@ -503,17 +129,24 @@
             </div>
         </div>
     </footer>
-
+    
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ?
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+    // Toggle menu
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
 
         // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

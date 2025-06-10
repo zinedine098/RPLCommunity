@@ -13,24 +13,23 @@
 
 <body>
     <!-- Header/Navbar -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">RPL<span>Community</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="tentang.html">Tentang</a></li>
-                    <li><a href="#services">Layanan/fasilitas</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Tim</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
-    </header>
+  <nav class="navbar">
+    <a class="logo">RPL<span>Community</span></a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="beranda.html"><i class="fas fa-home"></i> Beranda</a>
+      <a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a>
+      <a href="keahlian.html"><i class="fas fa-hands-helping"></i> Layanan</a>
+      <a href="#alumni"><i class="fas fa-briefcase"></i> Portofolio</a>
+      <a href="#alumni"><i class="fas fa-users"></i> Tim</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+    </div>
+  </nav>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -39,7 +38,6 @@
             <p>Kami akan membimbing anda untuk menjadi programmer yang handal dan Profesional</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn">Hubungi Kami</a>
-                <a href="#services" class="btn btn-outline">Pelajari Lebih Lanjut</a>
             </div>
         </div>
     </section>
@@ -93,7 +91,7 @@
                 </div>
 
                 <div class="about-img">
-                    <img src="img/html.jpeg" alt="Tim DigitalSolutions">
+                    <img src="img/org ngoding.png" alt="Tim DigitalSolutions">
                 </div>
             </div>
         </div>
@@ -143,31 +141,12 @@
                     <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>SEO</h3>
-                    <p>Optimasi mesin pencari untuk meningkatkan peringkat dan traffic organik website Anda.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
-                <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Computing</h3>
-                    <p>Solusi penyimpanan dan komputasi awan yang aman dan terukur untuk bisnis Anda.</p>
-                    <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Lab Computer</h3>
                     <p>Solusi untuk pembelajaran dan praktek yang di bimbing langsung oleh Kepala jurusan.</p>
-                    <!-- <a href="#">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></a> -->
                 </div>
             </div>
         </div>
@@ -223,15 +202,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="portfolio-item" data-category="app">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyek Aplikasi 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Aplikasi Kesehatan JKL</h3>
-                        <p>Aplikasi untuk konsultasi kesehatan online dengan dokter.</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
-                    </div>
-                </div> -->
-
                 <div class="portfolio-item" data-category="design">
                     <img src="img/komunikasi siswa.avif" alt="Proyek Desain 2" class="portfolio-img">
                     <div class="portfolio-overlay">
@@ -240,6 +210,16 @@
                         <a href="udgzidan-rizki.netlify.app" class="btn btn-outline">Lihat Detail</a>
                     </div>
                 </div>
+
+                                <div class="portfolio-item" data-category="app">
+                    <img src="img/kartu.png" alt="Proyek Website 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Aplikasi E-Bekal</h3>
+                        <p>Aplikasi Untuk Membayar Menggunakan Kartu Atau Non Tunai</p>
+                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -467,17 +447,6 @@
                 </div>
 
                 <div class="footer-col">
-                    <h3>Layanan</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Pengembangan Web</a></li>
-                        <li><a href="#">Aplikasi Mobile</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-col">
                     <h3>Jurusan IT</h3>
                     <ul class="footer-links">
                         <li><a href="#">Tentang Kami</a></li>
@@ -487,15 +456,6 @@
                         <li><a href="#">Karir</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru dari komunitas ini.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Alamat Email Anda" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
             </div>
 
             <div class="footer-bottom">
@@ -503,17 +463,24 @@
             </div>
         </div>
     </footer>
-
+    
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ?
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+    // Toggle menu
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
 
         // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
