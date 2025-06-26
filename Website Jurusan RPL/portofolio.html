@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPLCommunity</title>
+    <meta name="description"
+        content="Perusahaan digital profesional menyediakan layanan pengembangan web, aplikasi mobile, digital marketing, dan solusi IT terintegrasi.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container header-container">
+            <a href="beranda.html" class="logo">RPL<span>Community</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="beranda.html"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="keahlian.html"><i class="fas fa-tools"></i> Keahlian</a></li>
+                <li><a href="portofolio.html" class="active"><i class="fas fa-briefcase"></i> Portofolio</a></li>
+                <li><a href="tim.html"><i class="fas fa-users"></i> Tim</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Jurusan Terbaik untuk Pemrograman Profesional</h1>
+            <p>Kami membimbing santri aktif Pondok Pesantren Nurul Jadid menjadi programmer handal dan profesional</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio Kami</h2>
+                <p>Beberapa proyek terbaik yang telah kami selesaikan oleh siswa-siswa kami</p>
+            </div>
+
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Website</button>
+                <button class="filter-btn" data-filter="app">Aplikasi</button>
+                <button class="filter-btn" data-filter="design">Desain Web</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Proyek Website 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Website Universitas UNUJA</h3>
+                        <p>Website Perguruan tinggi dengan desain modern dan responsif</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyek Aplikasi 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Aplikasi Mobile Melle-e</h3>
+                        <p>Aplikasi mobile untuk e-commerce dengan fitur lengkap</p>
+                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Proyek Desain 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Redesign Website Perusahaan</h3>
+                        <p>Redesign website perusahaan dengan UX/UI yang lebih baik</p>
+                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Proyek Website 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Toko Online MELLE-E</h3>
+                        <p>Platform e-commerce dengan sistem pembayaran terintegrasi</p>
+                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <img src="img/komunikasi siswa.avif" alt="Proyek Desain 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Redesign Website Perusahaan</h3>
+                        <p>Redesign website perusahaan dengan UX/UI yang lebih baik.</p>
+                        <a href="udgzidan-rizki.netlify.app" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
+
+               <div class="portfolio-item" data-category="app">
+                    <img src="img/kartu.png" alt="Proyek Website 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Aplikasi E-Bekal</h3>
+                        <p>Aplikasi Untuk Pembayaran Non Tunai Atau Menggunakan Kartu</p>
+                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>RPLCommunity</h3>
+                    <p>Jurusan IT profesional yang membimbing keahlian pemroggraman terbaik untuk Anda.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/SmkNurulJadidPaitonProbolinggo/?locale=id_ID"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@smk.nurul.jadid"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/smknuruljadidpaiton/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@SMKNurulJadidPaitonProbolinggo"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Jurusan IT</h3>
+                    <ul class="footer-links">
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="keahlian.html">Keahlian Kami</a></li>
+                        <li><a href="portofolio.html">Portfolio Kami</a></li>
+                        <li><a href="tim.html">Tim Kami</a></li>
+                        <li><a href="#">Kontak Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 RPLCommunity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
