@@ -17,7 +17,7 @@
         <div class="container header-container">
             <a href="beranda.html" class="logo">RPL<span>Community</span></a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="beranda.html" class="active"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="beranda.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
                 <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
                 <li><a href="keahlian.html"><i class="fas fa-tools"></i> Keahlian</a></li>
                 <li><a href="portofolio.html"><i class="fas fa-briefcase"></i> Portofolio</a></li>
@@ -330,31 +330,37 @@
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nama Lengkap</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+            <div class="contact-form">
+                <h2>Kirim Pesan</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Alamat Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Nomor Telepon">
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" required>
+                            <option value="" disabled selected>Pilih Subjek</option>
+                            <option value="general">Pertanyaan Umum</option>
+                            <option value="services">Informasi Layanan</option>
+                            <option value="partnership">Kerjasama/Kemitraan</option>
+                            <option value="career">Karir</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Nomor Telepon</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn">Kirim Pesan</button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
