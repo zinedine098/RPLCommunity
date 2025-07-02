@@ -456,7 +456,6 @@
             background: var(--footer-bg);
             color: var(--footer-light);
             padding-top: 80px;
-            margin-top: 60px;
             position: relative;
             overflow: hidden;
         }
