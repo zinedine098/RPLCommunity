@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPLCommunity</title>
-    <meta name="description"
-        content="Perusahaan digital profesional menyediakan layanan pengembangan web, aplikasi mobile, digital marketing, dan solusi IT terintegrasi.">
+    <title>Portofolio - RPLCommunity</title>
+    <meta name="description" content="Portofolio lengkap RPLCommunity - Lihat proyek pengembangan web, aplikasi mobile, dan solusi digital yang telah kami selesaikan untuk klien kami.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <link rel="stylesheet" href="style/portofolio.css">
+    </head>
 
 <body>
     <!-- Header/Navbar -->
@@ -17,12 +16,12 @@
         <div class="container header-container">
             <a href="beranda.html" class="logo">RPL<span>Community</span></a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="beranda.html"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="beranda.html"><i class="fas fa-home"></i> Beranda</a></li>
                 <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
                 <li><a href="keahlian.html"><i class="fas fa-tools"></i> Keahlian</a></li>
                 <li><a href="portofolio.html" class="active"><i class="fas fa-briefcase"></i> Portofolio</a></li>
                 <li><a href="tim.html"><i class="fas fa-users"></i> Tim</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -35,8 +34,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Jurusan Terbaik untuk Pemrograman Profesional</h1>
-            <p>Kami membimbing santri aktif Pondok Pesantren Nurul Jadid menjadi programmer handal dan profesional</p>
+            <h1>Portofolio Karya Kami</h1>
+            <p>Lihat proyek-proyek terbaik yang telah kami selesaikan untuk klien dari berbagai industri</p>
+            <a href="#portfolio" class="btn">Jelajahi Portofolio</a>
         </div>
     </section>
 
@@ -44,73 +44,252 @@
     <section class="portfolio section" id="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Portfolio Kami</h2>
-                <p>Beberapa proyek terbaik yang telah kami selesaikan oleh siswa-siswa kami</p>
+                <h2>Karya Terbaik Kami</h2>
+                <p>Berikut adalah beberapa proyek yang telah kami selesaikan dengan sempurna untuk klien kami</p>
             </div>
-
+            
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">Semua</button>
                 <button class="filter-btn" data-filter="web">Website</button>
                 <button class="filter-btn" data-filter="app">Aplikasi</button>
-                <button class="filter-btn" data-filter="design">Desain Web</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
             </div>
-
+            
             <div class="portfolio-grid">
+                <!-- Item 1 -->
                 <div class="portfolio-item" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Proyek Website 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Website Universitas UNUJA</h3>
-                        <p>Website Perguruan tinggi dengan desain modern dan responsif</p>
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Proyek Website Perusahaan">
+                        <div class="portfolio-overlay">
+                            <h3>Website Perusahaan</h3>
+                            <p>Website profesional dengan fitur lengkap untuk perusahaan manufaktur</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Manajemen Perusahaan</h3>
+                        <p>Solusi digital untuk meningkatkan produktivitas bisnis</p>
+                        <span class="portfolio-category">Website</span>
                     </div>
                 </div>
-
+                
+                <!-- Item 2 -->
                 <div class="portfolio-item" data-category="app">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyek Aplikasi 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Aplikasi Mobile Melle-e</h3>
-                        <p>Aplikasi mobile untuk e-commerce dengan fitur lengkap</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Mobile E-Commerce">
+                        <div class="portfolio-overlay">
+                            <h3>Aplikasi E-Commerce</h3>
+                            <p>Aplikasi belanja online dengan sistem pembayaran terintegrasi</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShopEasy Mobile App</h3>
+                        <p>Aplikasi belanja online untuk platform Android dan iOS</p>
+                        <span class="portfolio-category">Aplikasi</span>
                     </div>
                 </div>
-
-                <div class="portfolio-item" data-category="design">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Proyek Desain 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Redesign Website Perusahaan</h3>
-                        <p>Redesign website perusahaan dengan UX/UI yang lebih baik</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Mobile E-Commerce">
+                        <div class="portfolio-overlay">
+                            <h3>Aplikasi E-Commerce</h3>
+                            <p>Aplikasi belanja online dengan sistem pembayaran terintegrasi</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShopEasy Mobile App</h3>
+                        <p>Aplikasi belanja online untuk platform Android dan iOS</p>
+                        <span class="portfolio-category">Aplikasi</span>
                     </div>
                 </div>
-
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Mobile E-Commerce">
+                        <div class="portfolio-overlay">
+                            <h3>Aplikasi E-Commerce</h3>
+                            <p>Aplikasi belanja online dengan sistem pembayaran terintegrasi</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShopEasy Mobile App</h3>
+                        <p>Aplikasi belanja online untuk platform Android dan iOS</p>
+                        <span class="portfolio-category">Aplikasi</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Mobile E-Commerce">
+                        <div class="portfolio-overlay">
+                            <h3>Aplikasi E-Commerce</h3>
+                            <p>Aplikasi belanja online dengan sistem pembayaran terintegrasi</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShopEasy Mobile App</h3>
+                        <p>Aplikasi belanja online untuk platform Android dan iOS</p>
+                        <span class="portfolio-category">Aplikasi</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Mobile E-Commerce">
+                        <div class="portfolio-overlay">
+                            <h3>Aplikasi E-Commerce</h3>
+                            <p>Aplikasi belanja online dengan sistem pembayaran terintegrasi</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShopEasy Mobile App</h3>
+                        <p>Aplikasi belanja online untuk platform Android dan iOS</p>
+                        <span class="portfolio-category">Aplikasi</span>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Item 4 -->
                 <div class="portfolio-item" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Proyek Website 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Toko Online MELLE-E</h3>
-                        <p>Platform e-commerce dengan sistem pembayaran terintegrasi</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Website Sekolah">
+                        <div class="portfolio-overlay">
+                            <h3>Website Sekolah</h3>
+                            <p>Portal informasi dan sistem manajemen untuk sekolah menengah</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Sekolah</h3>
+                        <p>Website dengan fitur manajemen siswa dan guru</p>
+                        <span class="portfolio-category">Website</span>
                     </div>
                 </div>
-
-                <div class="portfolio-item" data-category="design">
-                    <img src="img/komunikasi siswa.avif" alt="Proyek Desain 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Redesign Website Perusahaan</h3>
-                        <p>Redesign website perusahaan dengan UX/UI yang lebih baik.</p>
-                        <a href="udgzidan-rizki.netlify.app" class="btn btn-outline">Lihat Detail</a>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Website Sekolah">
+                        <div class="portfolio-overlay">
+                            <h3>Website Sekolah</h3>
+                            <p>Portal informasi dan sistem manajemen untuk sekolah menengah</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Sekolah</h3>
+                        <p>Website dengan fitur manajemen siswa dan guru</p>
+                        <span class="portfolio-category">Website</span>
                     </div>
                 </div>
-
-
-               <div class="portfolio-item" data-category="app">
-                    <img src="img/kartu.png" alt="Proyek Website 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Aplikasi E-Bekal</h3>
-                        <p>Aplikasi Untuk Pembayaran Non Tunai Atau Menggunakan Kartu</p>
-                        <a href="#" class="btn btn-outline">Lihat Detail</a>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Website Sekolah">
+                        <div class="portfolio-overlay">
+                            <h3>Website Sekolah</h3>
+                            <p>Portal informasi dan sistem manajemen untuk sekolah menengah</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Sekolah</h3>
+                        <p>Website dengan fitur manajemen siswa dan guru</p>
+                        <span class="portfolio-category">Website</span>
                     </div>
                 </div>
-
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Website Sekolah">
+                        <div class="portfolio-overlay">
+                            <h3>Website Sekolah</h3>
+                            <p>Portal informasi dan sistem manajemen untuk sekolah menengah</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Sekolah</h3>
+                        <p>Website dengan fitur manajemen siswa dan guru</p>
+                        <span class="portfolio-category">Website</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Website Sekolah">
+                        <div class="portfolio-overlay">
+                            <h3>Website Sekolah</h3>
+                            <p>Portal informasi dan sistem manajemen untuk sekolah menengah</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Sekolah</h3>
+                        <p>Website dengan fitur manajemen siswa dan guru</p>
+                        <span class="portfolio-category">Website</span>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kampanye Digital Marketing">
+                        <div class="portfolio-overlay">
+                            <h3>Kampanye Digital</h3>
+                            <p>Strategi pemasaran digital untuk meningkatkan penjualan produk</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Kampanye Sosial Media</h3>
+                        <p>Strategi konten dan iklan untuk platform sosial media</p>
+                        <span class="portfolio-category">Marketing</span>
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aplikasi Manajemen Proyek">
+                        <div class="portfolio-overlay">
+                            <h3>Manajemen Proyek</h3>
+                            <p>Aplikasi untuk mengelola proyek dan kolaborasi tim</p>
+                            <a href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>TeamFlow App</h3>
+                        <p>Aplikasi manajemen tugas dan proyek untuk tim</p>
+                        <span class="portfolio-category">Aplikasi</span>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    
+    <!-- Clients Section -->
+    <section class="clients section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Klien Kami</h2>
+                <p>Beberapa perusahaan yang telah mempercayai layanan kami</p>
+            </div>
+            
+            <div class="client-logo">
+                <img src="img/lambor.png" alt="Client Logo 1">
+                <img src="img/apple.jpeg" alt="Client Logo 2">
+                <img src="img/tesla.jpeg" alt="Client Logo 3">
+                <img src="img/nvidia.jpeg" alt="Client Logo 4">
+                <img src="img/alcoa.jpeg" alt="Client Logo 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <h2>Siap Mewujudkan Proyek Digital Anda?</h2>
+            <p>Kami siap membantu mewujudkan ide bisnis digital Anda menjadi kenyataan. Hubungi kami sekarang untuk konsultasi gratis.</p>
+            <a href="contact.html" class="btn">Hubungi Kami</a>
         </div>
     </section>
 
@@ -119,35 +298,54 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>RPLCommunity</h3>
-                    <p>Jurusan IT profesional yang membimbing keahlian pemroggraman terbaik untuk Anda.</p>
+                    <h3>Tentang Kami</h3>
+                    <p>RPLCommunity adalah perusahaan pengembangan solusi digital profesional yang berfokus pada pembuatan website, aplikasi mobile, dan strategi digital marketing.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/SmkNurulJadidPaitonProbolinggo/?locale=id_ID"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.tiktok.com/@smk.nurul.jadid"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/smknuruljadidpaiton/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@SMKNurulJadidPaitonProbolinggo"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="footer-col">
-                    <h3>Jurusan IT</h3>
+                    <h3>Layanan Kami</h3>
                     <ul class="footer-links">
+                        <li><a href="#">Pengembangan Website</a></li>
+                        <li><a href="#">Aplikasi Mobile</a></li>
+                        <li><a href="#">Desain UI/UX</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Konsultasi IT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
                         <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="keahlian.html">Keahlian Kami</a></li>
-                        <li><a href="portofolio.html">Portfolio Kami</a></li>
-                        <li><a href="tim.html">Tim Kami</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
+                        <li><a href="keahlian.html">Keahlian</a></li>
+                        <li><a href="portofolio.html">Portofolio</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hubungi Kami</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Teknologi No. 123, Probolinggo</li>
+                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@rplcommunity.com</li>
+                        <li><i class="fas fa-clock"></i> Senin-Jumat: 9:00 - 17:00</li>
                     </ul>
                 </div>
             </div>
-
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 RPLCommunity. All Rights Reserved.</p>
+                <p>&copy; 2023 RPLCommunity. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <script src="script.js"></script>
+    <script src="js/portofolio.js"></script>
 </body>
-
 </html>
