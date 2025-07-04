@@ -1,84 +1,476 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPL komunitas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <title>Skills of a Professional Programmer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="keahlian.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body class="font-sans">
+
     <!-- Header/Navbar -->
-    <header>
-        <div class="container header-container">
-            <a href="beranda.html" class="logo">RPL<span>Community</span></a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="beranda.html"><i class="fas fa-home"></i> Beranda</a></li>
-                <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
-                <li><a href="keahlian.html" class="active"><i class="fas fa-tools"></i> Keahlian</a></li>
-                <li><a href="portofolio.html"><i class="fas fa-briefcase"></i> Portofolio</a></li>
-                <li><a href="tim.html"><i class="fas fa-users"></i> Tim</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="beranda.html" class="text-2xl font-bold text-indigo-600">RPL<span class="text-gray-800">Community</span></a>
+            
+            <ul class="hidden md:flex space-x-8" id="navMenu">
+                <li><a href="beranda.html" class="text-gray-600 hover:text-indigo-600 flex items-center"><i class="fas fa-home mr-2"></i> Beranda</a></li>
+                <li><a href="tentang.html" class="text-gray-600 hover:text-indigo-600 flex items-center"><i class="fas fa-info-circle mr-2"></i> Tentang</a></li>
+                <li><a href="keahlian.html" class="text-indigo-600 flex items-center"><i class="fas fa-tools mr-2"></i> Keahlian</a></li>
+                <li><a href="portofolio.html" class="text-gray-600 hover:text-indigo-600 flex items-center"><i class="fas fa-briefcase mr-2"></i> Portofolio</a></li>
+                <li><a href="tim.html" class="text-gray-600 hover:text-indigo-600 flex items-center"><i class="fas fa-users mr-2"></i> Tim</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 flex items-center"><i class="fas fa-envelope mr-2"></i> Kontak</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            
+            <div class="md:hidden cursor-pointer" id="hamburger">
+                <span class="block w-6 h-0.5 bg-indigo-600 mb-1.5"></span>
+                <span class="block w-6 h-0.5 bg-indigo-600 mb-1.5"></span>
+                <span class="block w-6 h-0.5 bg-indigo-600"></span>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Keahlian Profesional Kami</h1>
-                <p>Kami Menyediakan Solusi bisnis terbaik dengan teknologi terkini Dengan tim ahli yang berpengalaman.</p>
+    <section class="hero bg-gradient-to-r from-indigo-500 to-purple-600 text-white pt-32 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Keahlian Profesional Kami</h1>
+            <p class="text-xl max-w-2xl mx-auto">Kami menyediakan solusi bisnis terbaik dengan teknologi terkini dan tim ahli yang berpengalaman.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Core Programming Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d3a4c181-8183-417d-b7f2-059c6032ffa8.png" 
+                                 alt="Programming languages" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Programming Languages</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            JavaScript/TypeScript (ES6+)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Python 3 (Django/Flask)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Java (Spring Boot)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            C# (.NET Core)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Go (Golang)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62ec5c34-042d-4525-902b-6b1d2ec2910b.png" 
+                                 alt="Web development" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Web Development</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            React.js / Next.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Vue.js / Nuxt.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Node.js / Express
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            REST & GraphQL APIs
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Web Components
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Database & Cloud -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c7c4ee6-9a14-44e0-80b2-dfd3753ae267.png" 
+                                 alt="Database and cloud" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Database & Cloud</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            PostgreSQL / MySQL
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            MongoDB / Firebase
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            AWS / Azure / GCP
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Docker & Kubernetes
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            CI/CD Pipelines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4ac20115-d868-4f6e-921a-67ba6064cf70.png" 
+                                 alt="Soft skills" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Soft Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Agile Methodology
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Problem Solving
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Technical Writing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Mentoring Juniors
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Client Communication
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e572fa0e-3e37-4811-bcf2-29256a03e059.png" 
+                                 alt="Mobile development" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Mobile Development</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            React Native
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Flutter
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Swift/iOS Development
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Kotlin/Android Development
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Progressive Web Apps
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-indigo-100 p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/abba28e9-66d5-4052-8489-aa201b65661d.png" 
+                                 alt="DevOps" 
+                                 class="w-12 h-12">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">DevOps & Automation</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            GitHub Actions
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Terraform & Ansible
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Jenkins & CircleCI
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Monitoring Tools (Prometheus)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Infrastructure as Code
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Keahlian Unggul</h2>
-                <p>Kami menawarkan berbagai layanan profesional untuk membantu bisnis Anda tumbuh dan berkembang di era digital.</p>
+   <!-- Experience Timeline -->
+<section id="experience" class="py-20 bg-indigo-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Developer Experience</h2>
+        
+        <div class="relative max-w-4xl mx-auto">
+            <!-- Timeline line - Moved to left side -->
+            <div class="absolute left-4 h-full w-0.5 bg-indigo-200"></div>
+            
+            <!-- Timeline Item 1 -->
+            <div class="mb-12 flex items-center w-full">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full shadow-lg absolute left-0">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="w-full bg-white p-6 rounded-lg shadow-md ml-8">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-xl font-bold">Senior Full Stack Developer</h3>
+                        <span class="text-indigo-600 font-semibold">2021 - Present</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">TechForward Inc. | San Francisco, CA</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Led migration of legacy system to modern microservices architecture</li>
+                        <li>Implemented CI/CD pipelines reducing deployment times by 60%</li>
+                        <li>Mentored junior developers through pair programming sessions</li>
+                    </ul>
+                </div>
             </div>
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Web Development">
+            
+            <!-- Timeline Item 2 -->
+            <div class="mb-12 flex items-center w-full">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full shadow-lg absolute left-0">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="w-full bg-white p-6 rounded-lg shadow-md ml-8">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-xl font-bold">Backend Developer</h3>
+                        <span class="text-indigo-600 font-semibold">2018 - 2021</span>
                     </div>
-                    <div class="service-content">
-                        <h3>Pengembangan Website</h3>
-                        <p>Website responsif dan SEO-friendly yang dirancang khusus untuk kebutuhan bisnis Anda dengan teknologi terkini.</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    <p class="text-gray-600 mb-4">CloudSolutions Ltd. | New York, NY</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Developed scalable REST APIs serving 10M+ monthly requests</li>
+                        <li>Optimized database queries improving performance by 40%</li>
+                        <li>Implemented comprehensive unit and integration testing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 3 -->
+            <div class="mb-12 flex items-center w-full">
+                <div class="z-10 flex items-center justify-center w-8 h-8 bg-indigo-500 rounded-full shadow-lg absolute left-0">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="w-full bg-white p-6 rounded-lg shadow-md ml-8">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-xl font-bold">Junior Web Developer</h3>
+                        <span class="text-indigo-600 font-semibold">2016 - 2018</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">DigitalAgency Inc. | Boston, MA</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Built responsive websites for diverse client portfolio</li>
+                        <li>Collaborated with designers to implement UI/UX</li>
+                        <li>Participated in agile development cycles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Showcase -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e6fa07d-9187-4e04-8387-ed4d3426a67b.png" 
+                             alt="Cloud Automation Suite" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cloud Automation Suite</h3>
+                        <p class="text-gray-600 mb-4">Automated multi-cloud deployment and management platform</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Terraform</span>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Details →</a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Digital Marketing">
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3e51fd3b-f97d-471d-9236-2d341e435eb1.png" 
+                             alt="Banking App" 
+                             class="w-full h-full object-cover">
                     </div>
-                    <div class="service-content">
-                        <h3>Pemasaran Digital</h3>
-                        <p>Strategi pemasaran digital komprehensif termasuk SEO, media sosial, dan iklan online untuk meningkatkan penjualan.</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Banking App</h3>
+                        <p class="text-gray-600 mb-4">Mobile banking application with biometric authentication</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Blockchain</span>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Details →</a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Branding">
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95c620d4-c75b-492f-940e-d1a673169f35.png" 
+                             alt="AI Recommendation Engine" 
+                             class="w-full h-full object-cover">
                     </div>
-                    <div class="service-content">
-                        <h3>Branding & Desain</h3>
-                        <p>Identitas merek yang kuat melalui desain logo, materi pemasaran, dan strategi branding yang efektif.</p>
-                        <a href="#">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Recommendation Engine</h3>
+                        <p class="text-gray-600 mb-4">Personalized content suggestions using machine learning</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">FastAPI</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition duration-300 shadow-lg">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Radar Chart -->
+    <section class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Proficiency</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <canvas id="skillsChart" class="mx-auto" width="400" height="400"></canvas>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Skill Legend</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-indigo-500 rounded-full mr-2"></div>
+                                <span>JavaScript/TypeScript</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-purple-500 rounded-full mr-2"></div>
+                                <span>Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-pink-500 rounded-full mr-2"></div>
+                                <span>React/Next.js</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                                <span>AWS Cloud</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
+                                <span>DevOps</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-2">Mastery Levels</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <div class="w-6 h-1 bg-green-500 mr-2"></div>
+                                    <span>90-100%: Expert</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-6 h-1 bg-yellow-500 mr-2"></div>
+                                    <span>70-89%: Proficient</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-6 h-1 bg-orange-500 mr-2"></div>
+                                    <span>40-69%: Competent</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-6 h-1 bg-red-500 mr-2"></div>
+                                    <span>0-39%: Beginner</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,154 +478,269 @@
     </section>
 
     <!-- Process Section -->
-    <section class="process section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Proses Kami</h2>
-                <p>Kami mengikuti proses yang terstruktur untuk memastikan hasil terbaik untuk setiap proyek yang kami tangani.</p>
-            </div>
-            <div class="process-steps">
-                <!-- Step 1 -->
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Konsultasi</h3>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Development Process</h2>
+            
+            <!-- Step 1 -->
+            <div class="mb-6 bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
+                <div class="step-header flex items-center justify-between p-6 cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="text-xl font-bold">Konsultasi</div>
+                    </div>
+                    <div class="text-indigo-600">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="step-content p-6 pt-0 hidden border-t border-gray-200">
                     <p>Diskusi mendalam tentang kebutuhan dan tujuan bisnis Anda.</p>
                 </div>
-                
-                <!-- Step 2 -->
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Perencanaan</h3>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="mb-6 bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
+                <div class="step-header flex items-center justify-between p-6 cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="text-xl font-bold">Perencanaan</div>
+                    </div>
+                    <div class="text-indigo-600">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="step-content p-6 pt-0 hidden border-t border-gray-200">
                     <p>Membuat rencana strategis dengan timeline dan anggaran yang jelas.</p>
                 </div>
-                
-                <!-- Step 3 -->
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Eksekusi</h3>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="mb-6 bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
+                <div class="step-header flex items-center justify-between p-6 cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="text-xl font-bold">Eksekusi</div>
+                    </div>
+                    <div class="text-indigo-600">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="step-content p-6 pt-0 hidden border-t border-gray-200">
                     <p>Tim ahli kami mengerjakan proyek dengan pendekatan terbaik.</p>
                 </div>
-                
-                <!-- Step 4 -->
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Pengujian</h3>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="mb-6 bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
+                <div class="step-header flex items-center justify-between p-6 cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="text-xl font-bold">Pengujian</div>
+                    </div>
+                    <div class="text-indigo-600">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="step-content p-6 pt-0 hidden border-t border-gray-200">
                     <p>Pengujian menyeluruh dan penyempurnaan sebelum peluncuran.</p>
                 </div>
-                
-                <!-- Step 5 -->
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <h3>Peluncuran</h3>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="mb-6 bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
+                <div class="step-header flex items-center justify-between p-6 cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="text-xl font-bold">Peluncuran</div>
+                    </div>
+                    <div class="text-indigo-600">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="step-content p-6 pt-0 hidden border-t border-gray-200">
                     <p>Peluncuran produk dan dukungan purna jual.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Apa Kata Klien Kami</h2>
-                <p>Berikut adalah testimoni dari beberapa klien yang telah menggunakan layanan kami.</p>
-            </div>
-            <div class="testimonial-slider">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-slide active">
-                    <p class="quote">Perusahaan XYZ membantu kami membuat website yang modern dan fungsional. Hasilnya melebihi ekspektasi kami dan berdampak positif pada bisnis.</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client 1">
-                        </div>
-                        <div class="client-name">
-                            <h4>Sarah Johnson</h4>
-                            <p>Direktur, ABC Company</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-slide">
-                    <p class="quote">Strategi pemasaran digital dari Perusahaan XYZ meningkatkan traffic website kami sebesar 300% dalam 3 bulan. Sangat direkomendasikan!</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 2">
-                        </div>
-                        <div class="client-name">
-                            <h4>Michael Tan</h4>
-                            <p>Pemilik, XYZ Store</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-slide">
-                    <p class="quote">Branding yang dibuat oleh tim mereka sangat powerful dan membantu kami membedakan diri dari kompetitor. Profesional dan kreatif!</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 3">
-                        </div>
-                        <div class="client-name">
-                            <h4>Lisa Wong</h4>
-                            <p>CMO, DEF Corporation</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slider Navigation -->
-                <div class="slider-controls">
-                    <div class="slider-dot active" data-slide="0"></div>
-                    <div class="slider-dot" data-slide="1"></div>
-                    <div class="slider-dot" data-slide="2"></div>
-                </div>
-            </div>
+    <!-- CTA Section -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Siap Meningkatkan Bisnis Anda?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Hubungi kami sekarang untuk konsultasi gratis dan temukan bagaimana kami dapat membantu bisnis Anda tumbuh.</p>
+            <a href="#contact" class="inline-block px-8 py-3 bg-white text-indigo-600 rounded-lg font-medium hover:bg-gray-100 transition duration-300 shadow-lg">
+                Hubungi Kami
+            </a>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta section" id="contact">
-        <div class="container">
-            <h2>Siap Meningkatkan Bisnis Anda?</h2>
-            <p>Hubungi kami sekarang untuk konsultasi gratis dan temukan bagaimana kami dapat membantu bisnis Anda tumbuh.</p>
-            <a href="contact.html" class="btn">Hubungi Kami</a>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>RPLCommunity</h3>
-                    <p>Jurusan IT profesional yang membimbing keahlian pemroggraman terbaik untuk Anda.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/SmkNurulJadidPaitonProbolinggo/?locale=id_ID"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.tiktok.com/@smk.nurul.jadid"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/smknuruljadidpaiton/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@SMKNurulJadidPaitonProbolinggo"><i class="fab fa-youtube"></i></a>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">RPL Community</h3>
+                    <p class="mb-4">Mastering the modern development stack with expertise across the entire software lifecycle.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-
-                <div class="footer-col">
-                    <h3>Jurusan IT</h3>
-                    <ul class="footer-links">
-                        <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="keahlian.html">Keahlian Kami</a></li>
-                        <li><a href="portofolio.html">Portfolio Kami</a></li>
-                        <li><a href="tim.html">Tim Kami</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="beranda.html" class="hover:text-indigo-300">Beranda</a></li>
+                        <li><a href="tentang.html" class="hover:text-indigo-300">Tentang</a></li>
+                        <li><a href="keahlian.html" class="hover:text-indigo-300">Keahlian</a></li>
+                        <li><a href="portofolio.html" class="hover:text-indigo-300">Portofolio</a></li>
+                        <li><a href="tim.html" class="hover:text-indigo-300">Tim</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Developer Street, Tech City, 101010</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2"></i>
+                            <span>+1 (234) 567-8900</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@rplcommunity.example</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 RPLCommunity. All Rights Reserved.</p>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 RPL Community. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- JavaScript -->
-<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Initialize Skills Radar Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+            const skillsChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Frontend', 'Backend', 'DevOps', 'Mobile', 'Testing', 'Database', 'Cloud'],
+                    datasets: [
+                        {
+                            label: 'JavaScript/TypeScript',
+                            data: [95, 90, 70, 80, 85, 60, 65],
+                            backgroundColor: 'rgba(99, 102, 241, 0.2)',
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Python',
+                            data: [30, 85, 75, 40, 88, 80, 70],
+                            backgroundColor: 'rgba(159, 122, 234, 0.2)',
+                            borderColor: 'rgba(159, 122, 234, 1)',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'React/Next.js',
+                            data: [98, 60, 40, 85, 70, 50, 55],
+                            backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                            borderColor: 'rgba(236, 72, 153, 1)',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Node.js',
+                            data: [70, 92, 65, 60, 75, 70, 60],
+                            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'AWS Cloud',
+                            data: [50, 65, 88, 40, 60, 75, 92],
+                            backgroundColor: 'rgba(74, 222, 128, 0.2)',
+                            borderColor: 'rgba(74, 222, 128, 1)',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'DevOps',
+                            data: [40, 60, 85, 30, 70, 65, 80],
+                            backgroundColor: 'rgba(234, 179, 8, 0.2)',
+                            borderColor: 'rgba(234, 179, 8, 1)',
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
+
+            // Process steps toggle functionality
+            const stepHeaders = document.querySelectorAll('.step-header');
+            stepHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+
+            // Mobile menu toggle
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('hidden');
+            });
+
+            // Contact form submission
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                formSuccess.classList.remove('hidden');
+                this.reset();
+                
+                setTimeout(() => {
+                    formSuccess.classList.add('hidden');
+                }, 5000);
+            });
+        });
+    </script>
 </body>
 </html>
