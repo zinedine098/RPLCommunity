@@ -746,6 +746,88 @@
                 }, 5000);
             });
         });
+      document.addEventListener('DOMContentLoaded', function() {
+    async function loadSkills() {
+        try {
+            const response = await fetch('get_keahlian.php');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if (data.status === 'success') {
+                renderSkills(data.data);
+            } else {
+                console.error('Error from server:', data.message);
+                // Tampilkan pesan error ke user jika perlu
+            }
+        } catch (error) {
+            console.error('Error fetching skills:', error);
+            // Tampilkan pesan error ke user
+        }
+    }
+
+    function renderSkills(skills) {
+        const skillsContainer = document.querySelector('#skills .grid');
+        
+        if (!skillsContainer) {
+            console.error('Skills container not found');
+            return;
+        }
+        
+        skillsContainer.innerHTML = '';
+        
+        if (!skills || skills.length === 0) {
+            skillsContainer.innerHTML = '<p class="text-center col-span-3">Tidak ada data keahlian yang tersedia</p>';
+            return;
+        }
+        
+        skills.forEach(skill => {
+            const skillCard = document.createElement('div');
+            skillCard.className = 'bg-gray-50 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition duration-300';
+            
+            skillCard.innerHTML = `
+                <div class="flex justify-center mb-6">
+                    <div class="bg-indigo-100 p-4 rounded-full">
+                        <img src="${skill.icon_url || 'default-icon.png'}" 
+                             alt="${skill.judul || 'Keahlian'}" 
+                             class="w-12 h-12"
+                             onerror="this.src='default-icon.png'">
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center">${skill.judul || 'Judul Keahlian'}</h3>
+                <ul class="space-y-2">
+                    ${skill.item1 ? `<li class="flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        ${skill.item1}
+                    </li>` : ''}
+                    ${skill.item2 ? `<li class="flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        ${skill.item2}
+                    </li>` : ''}
+                    ${skill.item3 ? `<li class="flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        ${skill.item3}
+                    </li>` : ''}
+                    ${skill.item4 ? `<li class="flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        ${skill.item4}
+                    </li>` : ''}
+                    ${skill.item5 ? `<li class="flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        ${skill.item5}
+                    </li>` : ''}
+                </ul>
+            `;
+            
+            skillsContainer.appendChild(skillCard);
+        });
+    }
+
+    loadSkills();
+});
     </script>
 </body>
 </html>
