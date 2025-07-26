@@ -8,6 +8,7 @@
     <meta name="description" content="Portofolio lengkap RPLCommunity - Lihat proyek pengembangan web, aplikasi mobile, dan solusi digital yang telah kami selesaikan untuk klien kami.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style/portofolio.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
 
@@ -295,58 +296,58 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Tentang Kami</h3>
-                    <p>RPLCommunity adalah perusahaan pengembangan solusi digital profesional yang berfokus pada pembuatan website, aplikasi mobile, dan strategi digital marketing.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">RPL Community</h3>
+                    <p class="mb-4">Mastering the modern development stack with expertise across the entire software lifecycle.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
+
                 
-                <div class="footer-col">
-                    <h3>Layanan Kami</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Pengembangan Website</a></li>
-                        <li><a href="#">Aplikasi Mobile</a></li>
-                        <li><a href="#">Desain UI/UX</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Konsultasi IT</a></li>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="beranda.html" class="hover:text-indigo-300">Beranda</a></li>
+                        <li><a href="tentang.html" class="hover:text-indigo-300">Tentang</a></li>
+                        <li><a href="keahlian.html" class="hover:text-indigo-300">Keahlian</a></li>
+                        <li><a href="portofolio.html" class="hover:text-indigo-300">Portofolio</a></li>
+                        <li><a href="tim.html" class="hover:text-indigo-300">Tim</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-col">
-                    <h3>Link Cepat</h3>
-                    <ul class="footer-links">
-                        <li><a href="beranda.html">Beranda</a></li>
-                        <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="keahlian.html">Keahlian</a></li>
-                        <li><a href="portofolio.html">Portofolio</a></li>
-                        <li><a href="contact.html">Kontak</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Hubungi Kami</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Jl. Teknologi No. 123, Probolinggo</li>
-                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
-                        <li><i class="fas fa-envelope"></i> info@rplcommunity.com</li>
-                        <li><i class="fas fa-clock"></i> Senin-Jumat: 9:00 - 17:00</li>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Developer Street, Tech City, 101010</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2"></i>
+                            <span>+1 (234) 567-8900</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@rplcommunity.example</span>
+                        </li>
+
                     </ul>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2023 RPLCommunity. All Rights Reserved.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 RPL Community. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    
     <script src="js/portofolio.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style/beranda.css">
     <link rel="shortcut icon" href="img/logo.jpg4" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -344,16 +345,6 @@
                         <input type="tel" id="phone" placeholder="Nomor Telepon">
                     </div>
                     <div class="form-group">
-                        <select id="subject" required>
-                            <option value="" disabled selected>Pilih Subjek</option>
-                            <option value="general">Pertanyaan Umum</option>
-                            <option value="services">Informasi Layanan</option>
-                            <option value="partnership">Kerjasama/Kemitraan</option>
-                            <option value="career">Karir</option>
-                            <option value="other">Lainnya</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
                     </div>
                     <button type="submit" class="btn">Kirim Pesan</button>
@@ -367,34 +358,54 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>RPLCommunity</h3>
-                    <p>Jurusan IT profesional yang membimbing keahlian pemroggraman terbaik untuk Anda.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/SmkNurulJadidPaitonProbolinggo/?locale=id_ID"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.tiktok.com/@smk.nurul.jadid"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/smknuruljadidpaiton/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@SMKNurulJadidPaitonProbolinggo"><i class="fab fa-youtube"></i></a>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">RPL Community</h3>
+                    <p class="mb-4">Mastering the modern development stack with expertise across the entire software lifecycle.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-300"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-col">
-                    <h3>Jurusan IT</h3>
-                    <ul class="footer-links">
-                        <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="keahlian.html">Keahlian Kami</a></li>
-                        <li><a href="portofolio.html">Portfolio Kami</a></li>
-                        <li><a href="tim.html">Tim Kami</a></li>
-                        <li><a href="contact.html">Kontak Kami</a></li>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="beranda.html" class="hover:text-indigo-300">Beranda</a></li>
+                        <li><a href="tentang.html" class="hover:text-indigo-300">Tentang</a></li>
+                        <li><a href="keahlian.html" class="hover:text-indigo-300">Keahlian</a></li>
+                        <li><a href="portofolio.html" class="hover:text-indigo-300">Portofolio</a></li>
+                        <li><a href="tim.html" class="hover:text-indigo-300">Tim</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Developer Street, Tech City, 101010</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2"></i>
+                            <span>+1 (234) 567-8900</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@rplcommunity.example</span>
+                        </li>
+
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 RPLCommunity. All Rights Reserved.</p>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 RPL Community. All rights reserved.</p>
             </div>
         </div>
     </footer>
